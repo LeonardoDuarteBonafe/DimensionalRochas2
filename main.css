@@ -278,7 +278,21 @@
     margin-left: 1.5%;
 }
 
-.end-banner img{
+.end-banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.end-banner-entrega{
+    right: 15%;
+    position: absolute;
+    width: 35%;
+}
+
+.end-banner-1{
     width: 100%;
 }
 
@@ -291,12 +305,19 @@
     transition: 1s;
 }
 
-.middle-banner{
-    z-index: -1;
+.middle-info-orcamento{
 }
 
-.middle-info-orcamento{
-    z-index: 20;
+.middle-info-orcamento p a img{
+    z-index: 10;
+    width: 80%;
+    margin-left: 0;
+}
+
+.middle-info-orcamento p{
+    z-index: 10;
+    display: flex;
+    align-items: center;
 }
 /*
 @keyframes appears{
@@ -329,11 +350,11 @@
 #imagem-alerta-infinito {
   animation: blinker 2s linear infinite;
     transform: scale(1.02);
-    z-index: -1;
+    z-index: 1;
 }
 @keyframes blinker {
     50% { transform: scale(1.1);} 
-    z-index: -1;
+    z-index: 1;
 }
 
 .whatsapp-contato{
@@ -1055,12 +1076,18 @@
         padding-bottom: 15px;
     }
     
+    .middle-info-orcamento p a img{
+        width: 50%;
+        margin-left: 30%;
+    }
+    
     .middle-info{
         width: 100%;
         justify-content: center;
         align-items: center;
         align-content: center;
         padding: 0;
+        z-index: 1;
     }
     
     .middle-info img{
@@ -1340,6 +1367,10 @@
         width: 80%;
     }
     
+    .middle-info-orcamento p a img{
+        width: 60%;
+    }
+    
     .middle-info{
         margin-top: -38px;
     }
@@ -1413,6 +1444,11 @@
     
     .social-logos{
         margin: 5px;
+    }
+    
+    .middle-info-orcamento p a img{
+        width: 60%;
+        margin-left: 30%;
     }
     
     .middle-info-msg p{
@@ -1565,6 +1601,11 @@
         margin: 10px;
     }
     
+    .middle-info-orcamento p a img{
+        width: 65%;
+        margin-left: 30%;
+    }
+    
     .middle-info p{
         font-size: 1.8em;
     }
@@ -1619,6 +1660,11 @@
     
     .social-logos{
         margin: 10px 20px 0 0;
+    }
+    
+    .middle-info-orcamento p a img{
+        width: 70%;
+        margin-left: 25%;
     }
     
     .middle-info-whatsapp{

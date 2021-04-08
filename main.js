@@ -12,6 +12,9 @@ const carouselButtons = document.querySelectorAll('.carousel button');
 
 const carouselButtonPrevious = document.querySelector('.carousel-button-previous');
 const carouselButtonNext = document.querySelector('.carousel-button-next');
+    
+const whatsappContato = document.querySelectorAll('.whatsapp-contato');
+const imagemAlerta = document.querySelector('#imagem-alerta');
 
 const numberOfImages = document.querySelectorAll('.carousel-images img').length;
 let imageIndex = 1;
@@ -25,6 +28,12 @@ const emailBtn = document.querySelector('.submitBtn');
     
 emailBtn.addEventListener('click', getFormInfos);
     
+/*window.setTimeout(imageAppear, 1500);
+
+function imageAppear(){
+    imagemAlerta.style.display ="block";
+}
+    */
 function getFormInfos(){
     
     let contador = 0;
@@ -176,6 +185,16 @@ function carouselPreviousButton(){
     changeImage(true);
     timeToChangeImage(false);
 }    
+    
+/*imagemAlerta.forEach(image =>{
+       image.style.display = "block";
+    for(i=1;i<100;i++) // creates delay between blinks
+    f.style.display="none";
+   })); */    
+    
+whatsappContato.forEach(button => button.addEventListener('click', function(){
+       window.open('https://api.whatsapp.com/send?phone=5528999563579&text=Ol%C3%A1%2C+tenho+interesse+no+seu+produto!','_blank');
+   }));    
     
 /*carouselButtons.forEach(button => button.addEventListener("click", function (event){
        if(event.target.id == 'previous'){

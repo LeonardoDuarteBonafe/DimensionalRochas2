@@ -291,6 +291,13 @@
     transition: 1s;
 }
 
+.middle-banner{
+    z-index: -1;
+}
+
+.middle-info-orcamento{
+    z-index: 20;
+}
 /*
 @keyframes appears{
     0% {opacity: 0%;}
@@ -307,7 +314,6 @@
 
 #imagem-alerta:hover{
     transform: scale(1.05);
-    z-index: 50;
     transition: 1s;
 }
 /*#imagem-alerta {
@@ -321,13 +327,13 @@
 }*/
 
 #imagem-alerta-infinito {
-  animation: blinker 1.2s linear infinite;
+  animation: blinker 2s linear infinite;
+    transform: scale(1.02);
+    z-index: -1;
 }
 @keyframes blinker {
-  50% { opacity: 50%; }
-}
-@keyframes blin {
-  50% { opacity: 0; }
+    50% { transform: scale(1.1);} 
+    z-index: -1;
 }
 
 .whatsapp-contato{
